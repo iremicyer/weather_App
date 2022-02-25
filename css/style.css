@@ -1,4 +1,7 @@
+/* :root --> özellikleri kullanılacak olan en üst düzey ebeveyn */
 :root {
+    /* üst düzey ebeveny içerisindeki değişkenler "--" ile başlar. */
+
     --bg_main:#0a1f44;
     --text_light: #fff;
     --text_med: #53627c;
@@ -15,7 +18,10 @@
     
 }
 button{
+    /* imleç butona geldiğinde, imlecin el şeklinde görünmesini sağlıyor. */
+    color: white;
     cursor: pointer;
+    border: none;
 }
 
 input{
@@ -24,7 +30,7 @@ input{
     position: relative;
     margin-left: 900px;
 }
-button,
+
 input{
     border: none;
     background: none;
