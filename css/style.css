@@ -17,7 +17,7 @@
     font-weight: normal;
     
 }
-button{
+button{ 
     /* imleç butona geldiğinde, imlecin el şeklinde görünmesini sağlıyor. */
     color: white;
     cursor: pointer;
@@ -29,14 +29,13 @@ input{
     text-align: center;
     position: relative;
     margin-left: 900px;
-}
 
-input{
     border: none;
     background: none;
     outline: none;
     color: inherit;
 }
+
 img{
     display: block;
     max-width: 100%;
@@ -52,9 +51,13 @@ body{
   padding: 50px;
 }
 .top-banner {
+    /* formdaki textlerin rengi beyaz ayarlandı */
+
     color: var(--text_light);
 }
 .heading{
+    /* heading sınıfına ait h1 başlığına özellik atandı */
+
     font-weight: bold;
     font-size: 90px;
     letter-spacing: 0.02rem;
@@ -62,24 +65,24 @@ body{
     text-align: center;
     margin: 120px;
 }
-.top-banner form {
+ .top-banner form {
     position: relative;
     display: flex;
-
- 
-}
-.top-banner form input {
+} 
+ /* top-banner sınıfına ait div'in içerisindeki input'a özellik atandı.  */
+ .top-banner form input {
     font-size: 2rem;
     height: 40px;
     padding: 5px 5px 10px;
     border-bottom: 1px solid;
    
-}
-.top-banner form input::placeholder {
-    color: currentColor;
+} 
+ .top-banner form input::placeholder { 
+/* top-banner sınıfına ait div'in içerisindeki placeholer değişkenine renk özelliği verilmiştir.(search for a city)  */
+    color: currentColor; 
 
-}
-.top-banner form button {
+} 
+ .top-banner form button {
     font-size: 1rem;
     font-weight: bold;
     letter-spacing: 0.1rem;
@@ -89,9 +92,10 @@ body{
     background: var(--red);
 }
 .top-banner form button:hover{
+    /* hover, submit butonunun üzerine geldiğimizde renginin değişmesini sağlıyor. */
     background: var(--darkred);
    
-}
+} 
 .top-banner form .msg {
     position: absolute;
     bottom: -40px;
@@ -100,76 +104,3 @@ body{
     min-height: 40px;
  
 }
-
-
-
-
-
-/* @media  screen and (max-width:700px){
-    .top-banner form {
-        flex-direction: column;
-    }
-    .top-banner form input,
-    .top-banner form button {
-        width: 100%;
-    }
-    .top-banner form button {
-        margin: 20px 0 0 0;
-    }
-    .top-banner form .msg {
-        position: static;
-        max-width: none;
-        min-height: 0;
-        margin-top: 10px;
-    }
-} */
-
-
-
-
-
-
-
-
-/* body {
-    font-family: sans-serif;
-    background: midnightblue;
-    color: var(text_dark);
-    padding: 50px;
-    text-align: center;
-    margin: 300px;
-
-}
-*{
-    margin :0;
-    padding: 0;
-    /* box-sizing dolgu ve kenarlık ekliyor */
-    /* box-sizing: border-box; 
-    font-weight: normal; */
-/* }
-button {
-    cursor: pointer;
-    background-color: crimson;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    border: none;
-    border-radius: 3px;
-    width: 120px;
-    height: 60px;
-
-}
-h1{
-    color: white;
-    font-size: 100px;
-
-}
-
- input{
-    -webkit-appearance: none;
-    border: none;
-    background: none;  
-    outline: none;
-    color: white;
-    height: 50px;
-}  */ 
