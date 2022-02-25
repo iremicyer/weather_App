@@ -8,10 +8,11 @@
     --orange:#ff8c00;
 }
 *{
-    marign:0;
+    margin:0;
     padding: 0;
     box-sizing: border-box;
     font-weight: normal;
+    
 }
 button{
     cursor: pointer;
@@ -19,6 +20,9 @@ button{
 
 input{
     -webkit-appearance: none;
+    text-align: center;
+    position: relative;
+    margin-left: 900px;
 }
 button,
 input{
@@ -46,23 +50,28 @@ body{
 }
 .heading{
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 90px;
     letter-spacing: 0.02rem;
     padding: 0 0 30px 0;
+    text-align: center;
+    margin: 120px;
 }
 .top-banner form {
     position: relative;
     display: flex;
-    align-items: center;
+
+ 
 }
 .top-banner form input {
     font-size: 2rem;
     height: 40px;
     padding: 5px 5px 10px;
     border-bottom: 1px solid;
+   
 }
 .top-banner form input::placeholder {
     color: currentColor;
+
 }
 .top-banner form button {
     font-size: 1rem;
@@ -75,6 +84,7 @@ body{
 }
 .top-banner form button:hover{
     background: var(--darkred);
+   
 }
 .top-banner form .msg {
     position: absolute;
@@ -82,7 +92,31 @@ body{
     left: 0;
     max-width: 450px;
     min-height: 40px;
+ 
 }
+
+
+
+
+
+/* @media  screen and (max-width:700px){
+    .top-banner form {
+        flex-direction: column;
+    }
+    .top-banner form input,
+    .top-banner form button {
+        width: 100%;
+    }
+    .top-banner form button {
+        margin: 20px 0 0 0;
+    }
+    .top-banner form .msg {
+        position: static;
+        max-width: none;
+        min-height: 0;
+        margin-top: 10px;
+    }
+} */
 
 
 
@@ -132,4 +166,4 @@ h1{
     outline: none;
     color: white;
     height: 50px;
-}  */ */
+}  */ 
