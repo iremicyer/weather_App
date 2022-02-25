@@ -13,47 +13,18 @@ const getApiUserList = (input) => {
         dataType: 'json',
         success: function (veri) {
             console.log(veri);
-
-            // if (veri[0].id != "0") {
-
-            // for (var i = 0; i < veri.length; i++) {
-
-            //     $('#weatherList').append(
-
-            //         `<tr>
-
-            //                       <td>
-
-            //                          ${veri[i].sehir}
-
-            //                       </td>
-
-            //                       <td>
-
-            //                           ${veri[i].weather}
-
-            //                       </td>
-
-            //                       <td>
-
-            //                           ${veri[i].title}
-
-            //                       </td>
-
-            //                       <td>
-
-            //                           ${veri[i].completed}
-
-            //                       </td
-            //               </tr>`);
-
-            // } }
-
-            // else {
-
-            //     console.log("getApiUserList ajax send request nodata");
-
-            // }
+            document.querySelector(".cities").innerHTML +=
+                `<li class="city">
+                    <h2 class="city-name" data-name= ${veri.main.name}>
+                        <span></span>
+                        <sup>${veri.sys.country}</sup>
+                    </h2>
+                    <span class="city-temp">${veri.main.temp}  <sup>°C</sup></span>
+                    <figure>
+                        <img class="city-icon" src="${veri.weather[0].icon} " alt="icon" />
+                        <figcaption>${veri.weather[0].description}</figcaption>
+                    </figure>
+                </li>`;
 
         },
 
@@ -101,5 +72,5 @@ const getApiUserList = (input) => {
         }
 
     });
-    
+
 }
